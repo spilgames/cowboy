@@ -15,7 +15,6 @@
 
 %% @doc Core HTTP parsing API.
 -module(cowboy_http).
--compile(export_all).
 
 -include_lib("eunit/include/eunit.hrl").
 %% Parsing.
