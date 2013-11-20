@@ -1021,10 +1021,10 @@ cookie_to_iodata(Name, Value, Opts) ->
 		MaxAgeBin, DomainBin, PathBin, SecureBin, HttpOnlyBin].
 
 %% @doc Decode a URL encoded binary.
-%% @equiv urldecode(Bin, crash)
+%% @equiv urldecode(Bin, skip)
 -spec urldecode(binary()) -> binary().
 urldecode(Bin) when is_binary(Bin) ->
-	urldecode(Bin, <<>>, crash).
+	urldecode(Bin, <<>>, skip).
 
 %% @doc Decode a URL encoded binary.
 %% The second argument specifies how to handle percent characters that are not
